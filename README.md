@@ -5,8 +5,13 @@
 A D3 narrative visualization examining the public evidence
 traceability of FDA-listed AI-enabled medical devices.
 
-This project was created for the CS416 Data Visualization
-Final Project.
+This project was created for the CS416 Data Visualization Final Project.
+
+## Live Visualization
+
+View the published narrative visualization:
+
+https://simpsontsai.github.io/CS416-medical-ai-trace/
 
 ## Project Question
 
@@ -33,8 +38,8 @@ The project uses an interactive slideshow with four scenes:
 
 ## Project Scope
 
-The dataset contains 1,524 FDA list records used in this project.
-The FDA list is periodically updated and is not comprehensive.
+The project dataset contains 1,524 FDA list records. The FDA list is
+periodically updated and is not comprehensive.
 
 Three devices received manual evidence tracing:
 
@@ -48,49 +53,16 @@ a representative sample of all FDA-listed devices.
 Records outside these three cases are labeled **not audited**, not
 **no evidence**.
 
-## Run Locally
+## Local Development
 
-Because the project loads local JSON files, run it through a local
-HTTP server rather than opening `index.html` directly.
+The published visualization can be opened using the live link above.
+
+The following steps are only needed when downloading, modifying, or
+testing the source code locally. Because the project loads local JSON
+files, it should be run through an HTTP server rather than by opening
+`index.html` directly.
 
 From the project directory, run:
 
 ```bash
 python3 -m http.server 8001
-```
-Then open the local server in a browser:
-http://localhost:8001
-
-## Project Files
-medical-ai-trace/
-├── index.html
-├── README.md
-├── css/
-│   └── styles.css
-├── js/
-│   └── main.js
-└── data/
-    ├── devices.json
-    └── evidence-trails.json
-
-index.html — Semantic page structure and project content
-css/styles.css — Layout, visual styling, and SVG classes
-js/main.js — Application state, D3 rendering, parameters, and triggers
-data/devices.json — FDA list records used in the visualization
-data/evidence-trails.json — Three manually audited evidence trails
-
-## Data Sources
-
-The project uses public information from:
-
-FDA AI-Enabled Medical Device List
-FDA device databases and public decision documents
-ClinicalTrials.gov
-
-Detailed source links and methodology are included in the
-visualization.
-
-Author
-
-Chia Yang Tsai
-CS416 Data Visualization
