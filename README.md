@@ -91,7 +91,7 @@ The project uses public information from:
 Detailed source links and methodology are included in the visualization.
 
 ## Author
-University of Illinois Urbana-Champaign Computer Science
-CS416 Data Visualization
-Chia Yang Tsai  
-Email: ct68@illinois.edu
+- University of Illinois Urbana-Champaign Computer Science
+- CS416 Data Visualization
+- Chia Yang Tsai  
+- Email: ct68@illinois.edu
