@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:,">
+  <meta
+    name="description"
+    content="A narrative visualization tracing the public evidence behind FDA-listed AI-enabled medical devices."
+  >
+  <title>Cleared, But How Visible Is the Evidence?</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- The assignment permits D3. No high-level chart library is used. -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Return to the beginning">
+      Medical AI Evidence Trace
+    </a>
+
+    <nav class="utility-nav" aria-label="Project information">
+      <a href="#methodology">Methodology</a>
+      <a href="#sources">Sources</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="project-title">
+      <p class="kicker">FDA-listed AI-enabled medical devices</p>
+
+      <h1 id="project-title">
+        Cleared, But How Visible Is the Evidence?
+      </h1>
+
+      <p class="hero-summary">
+        FDA authorization records are usually visible. The harder question is
+        whether a reader can continue from the regulatory record to publicly
+        registered studies and results.
+      </p>
+
+      <p class="scope-note">
+        This project measures public traceability—not clinical quality, safety,
+        or the completeness of evidence submitted to the FDA.
+      </p>
+      <div class="project-byline">
+      <span>Name: Chia Yang Tsai</span>
+      <span aria-hidden="true">·</span>
+      <span>Email: ct68@illinois.edu</span>
+</div>
+    </section>
+
+    <section class="story" aria-label="Narrative visualization">
+      <ol id="progress" class="progress" aria-label="Story progress"></ol>
+
+      <div class="story-shell">
+        <aside class="scene-copy" aria-live="polite">
+          <p id="scene-eyebrow" class="scene-eyebrow"></p>
+          <h2 id="scene-title"></h2>
+          <p id="scene-body" class="scene-body"></p>
+
+          <div class="annotation-card">
+            <p class="annotation-label">What to notice</p>
+            <p id="scene-annotation"></p>
+          </div>
+
+          <p id="interaction-hint" class="interaction-hint"></p>
+        </aside>
+
+        <section class="visual-panel" aria-label="Data visualization panel">
+          <div class="visual-toolbar">
+            <span id="visual-caption"></span>
+            <span class="prototype-badge">FDA public records</span>
+          </div>
+
+          <div id="visualization" class="visualization"></div>
+          <div id="trail-detail" class="trail-detail" aria-live="polite" hidden></div>
+
+          <div id="trail-controls" class="trail-controls" hidden></div>
+
+          <div id="explorer-controls" class="explorer-controls" hidden>
+            <label>
+              Group by
+              <select id="group-select">
+                <option value="specialty">Medical specialty</option>
+                <option value="year">Decision period</option>
+                <option value="pathway">Authorization pathway</option>
+              </select>
+            </label>
+
+            <label>
+              Evidence layer
+              <select id="evidence-select">
+                <option value="regulatory">Regulatory record</option>
+                <option value="study">Registered-study trace</option>
+              </select>
+            </label>
+          </div>
+
+          <div id="explorer-detail" class="explorer-detail" aria-live="polite" hidden></div>
+        </section>
+      </div>
+
+      <div class="story-controls">
+        <button id="previous-button" class="secondary-button" type="button">
+          ← Previous
+        </button>
+
+        <p id="scene-counter" class="scene-counter"></p>
+
+        <button id="next-button" class="primary-button" type="button">
+          Next →
+        </button>
+      </div>
+    </section>
+
+    <section id="methodology" class="information-section">
+      <p class="section-label">Methodology</p>
+      <h2>What counts as a trace?</h2>
+
+      <div class="method-grid">
+        <article>
+          <h3>Confirmed</h3>
+          <p>
+            A direct identifier or an unambiguous product-specific reference
+            connects two public records.
+          </p>
+        </article>
+
+        <article>
+          <h3>Probable</h3>
+          <p>
+            Multiple identity signals agree, but no unique public identifier
+            establishes the connection.
+          </p>
+        </article>
+
+        <article>
+          <h3>Not found</h3>
+          <p>
+            The documented search process did not produce a reliable match.
+            This does not mean no evidence exists.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="sources" class="site-footer">
+    <p>
+      Data sources planned for the production version: FDA AI-Enabled Medical
+      Device List, FDA device databases, and ClinicalTrials.gov.
+    </p>
+  </footer>
+</body>
+</html>
