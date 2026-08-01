@@ -1,0 +1,146 @@
+[
+  {
+    "id": "imagio",
+    "label": "Clear trail",
+    "device": "Imagio Breast Imaging System",
+    "company": "Seno Medical Instruments, Inc.",
+    "submission": "P200003",
+    "pathway": "PMA",
+    "decisionDate": "2021-01-11",
+    "summary": "The FDA record directly names a ClinicalTrials.gov identifier, and the linked study has posted results.",
+    "message": "A direct identifier lets the reader move from authorization to a registered study and posted results.",
+    "stages": [
+      {
+        "id": "fda-list",
+        "label": "FDA list",
+        "status": "confirmed",
+        "detail": "P200003 appears in the FDA AI-enabled device list.",
+        "url": ""
+      },
+      {
+        "id": "official-record",
+        "label": "Official record",
+        "status": "confirmed",
+        "detail": "FDA PMA record for P200003.",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P200003"
+      },
+      {
+        "id": "public-summary",
+        "label": "Public summary",
+        "status": "confirmed",
+        "detail": "Summary of Safety and Effectiveness Data is publicly available.",
+        "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200003B.pdf"
+      },
+      {
+        "id": "registered-study",
+        "label": "Registered study",
+        "status": "confirmed",
+        "detail": "FDA directly lists NCT01943916.",
+        "url": "https://clinicaltrials.gov/study/NCT01943916"
+      },
+      {
+        "id": "posted-results",
+        "label": "Posted results",
+        "status": "confirmed",
+        "detail": "ClinicalTrials.gov reports posted study results.",
+        "url": "https://clinicaltrials.gov/study/NCT01943916?tab=results"
+      }
+    ]
+  },
+  {
+    "id": "gi-genius",
+    "label": "Search-dependent trail",
+    "device": "GI Genius",
+    "company": "Cosmo Artificial Intelligence - AI, Ltd.",
+    "submission": "DEN200055",
+    "pathway": "De Novo",
+    "decisionDate": "2021-04-09",
+    "summary": "The regulatory trail is public, but the FDA record does not provide a direct NCT identifier. A product-specific study can be found through search.",
+    "message": "The study connection is plausible and product-specific, but it depends on search rather than a direct FDA identifier.",
+    "stages": [
+      {
+        "id": "fda-list",
+        "label": "FDA list",
+        "status": "confirmed",
+        "detail": "DEN200055 appears in the FDA AI-enabled device list.",
+        "url": ""
+      },
+      {
+        "id": "official-record",
+        "label": "Official record",
+        "status": "confirmed",
+        "detail": "FDA De Novo record for DEN200055.",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN200055"
+      },
+      {
+        "id": "public-summary",
+        "label": "Public summary",
+        "status": "confirmed",
+        "detail": "FDA review decision summary is publicly linked.",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN200055"
+      },
+      {
+        "id": "registered-study",
+        "label": "Registered study",
+        "status": "search-dependent",
+        "detail": "NCT04440865 describes Genius-assisted colonoscopy, but the link was found through search rather than an FDA-listed NCT ID.",
+        "url": "https://clinicaltrials.gov/study/NCT04440865"
+      },
+      {
+        "id": "posted-results",
+        "label": "Posted results",
+        "status": "not-posted",
+        "detail": "The selected ClinicalTrials.gov record does not show posted results.",
+        "url": "https://clinicaltrials.gov/study/NCT04440865"
+      }
+    ]
+  },
+  {
+    "id": "briefcase",
+    "label": "Difficult trail",
+    "device": "BriefCase",
+    "company": "Aidoc Medical, Ltd.",
+    "submission": "K192383",
+    "pathway": "510(k)",
+    "decisionDate": "2019-12-20",
+    "summary": "The regulatory record is visible, but product-name search did not yield a reliable ClinicalTrials.gov match.",
+    "message": "A visible authorization record does not guarantee that a public study can be reliably identified by product name.",
+    "stages": [
+      {
+        "id": "fda-list",
+        "label": "FDA list",
+        "status": "confirmed",
+        "detail": "K192383 appears in the FDA AI-enabled device list.",
+        "url": ""
+      },
+      {
+        "id": "official-record",
+        "label": "Official record",
+        "status": "confirmed",
+        "detail": "FDA 510(k) record for K192383.",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K192383"
+      },
+      {
+        "id": "public-summary",
+        "label": "Public summary",
+        "status": "confirmed",
+        "detail": "A public 510(k) summary is available from the FDA record.",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K192383"
+      },
+      {
+        "id": "registered-study",
+        "label": "Registered study",
+        "status": "unresolved",
+        "detail": "The documented search did not identify a sufficiently specific ClinicalTrials.gov match.",
+        "url": ""
+      },
+      {
+        "id": "posted-results",
+        "label": "Posted results",
+        "status": "not-reached",
+        "detail": "No study-level results status can be assigned without a reliable study match.",
+        "url": ""
+      }
+    ]
+  }
+]
